@@ -17,21 +17,33 @@
 
 ## 安装
 
-### 方式一:ClawHub(推荐,一条命令)
+> **说明**:这个 skill 已发布到 [ClawHub registry](https://clawhub.ai) (`tuweiqinghua`),同时符合 OpenClaw skill 规范。**Claude Code** 和 **OpenClaw** 是两个不同的产品,安装方式也不一样。按你在用的那个选。
 
-[ClawHub](https://clawhub.ai) 是 Claude Code skills 的包管理器。已安装 `clawdhub` CLI 的话:
-
-```bash
-clawdhub install tuweiqinghua
-```
-
-没装 CLI 的话先装一下:
+### 方式一:OpenClaw 用户(原生命令)
 
 ```bash
-npm i -g clawdhub
+openclaw skills install tuweiqinghua
 ```
 
-### 方式二:从 GitHub 克隆
+直接装进当前 workspace 的 `skills/` 目录。详见 [OpenClaw skills 文档](https://docs.openclaw.ai/tools/skills)。
+
+### 方式二:Claude Code 用户 —— ClawHub CLI(一条命令同步到 ~/.claude)
+
+ClawHub 本身是个 skill registry,它的 CLI 名字是 `clawhub`(npm 包也叫 `clawhub`,**不是 `clawdhub`**,别装错):
+
+```bash
+npm i -g clawhub
+clawhub install tuweiqinghua --workdir ~/.claude --dir skills
+```
+
+装完 skill 在 `~/.claude/skills/tuweiqinghua/`。slash command 目前 ClawHub 不管,还得手动拷:
+
+```bash
+mkdir -p ~/.claude/commands
+curl -sSL https://raw.githubusercontent.com/wanikua/tuweiqinghua/main/commands/土味情话.md -o ~/.claude/commands/土味情话.md
+```
+
+### 方式三:Claude Code 用户 —— 从 GitHub 克隆(手动拷)
 
 ```bash
 git clone https://github.com/wanikua/tuweiqinghua.git
