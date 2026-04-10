@@ -1,10 +1,10 @@
-# 土味情话 · tuweiqinghua
+# 土味情话 · tuweiqinghua · Claude Code Skill
 
-> 抖音风格的中文土味情话生成器 —— Claude Code skill + slash command
+> 抖音风格的中文土味情话生成器 —— Claude Code skill + slash command,支持持续对话、姓名/职业/场景定制
 
-一个恋爱脑 bot 插件,脸皮厚到反光,满脑子只有一件事:**把你撩到又想笑又想打它**。适合单身狗自娱自乐、情侣日常撒糖、追对象找灵感、发朋友圈整活儿。
+一个**恋爱脑 bot** 插件,脸皮厚到反光,满脑子只有一件事:**把你撩到又想笑又想打它**。适合单身狗自娱自乐、情侣日常撒糖、追对象找灵感、发朋友圈整活儿。Claude Code 里一键安装,同时支持 [ClawHub](https://clawhub.ai) 包管理器一键拉取。
 
-**关键词**:土味情话 / 中文情话 / 抖音情话 / Claude Code skill / slash command / 恋爱脑 bot / 聊天机器人 / 撩人话术 / 追对象神器
+**关键词**:土味情话 · 中文情话 · 抖音情话 · Claude Code Skill · Claude Code Slash Command · ClawHub · 恋爱脑 bot · 聊天机器人 · 撩人话术 · 追对象神器 · Chinese pickup lines · Douyin love quotes · roleplay chatbot
 
 ## 特点
 
@@ -13,8 +13,25 @@
 - **对象信息定制**:支持传姓名/职业/场景,每句都蹭
 - **五大土味套路**:断句、谐音、职业反问、感官投射、反转单句
 - **两种触发方式**:slash command(主动)+ skill(被动关键词触发)
+- **双重安装渠道**:GitHub clone 或 ClawHub CLI 一键拉
 
 ## 安装
+
+### 方式一:ClawHub(推荐,一条命令)
+
+[ClawHub](https://clawhub.ai) 是 Claude Code skills 的包管理器。已安装 `clawdhub` CLI 的话:
+
+```bash
+clawdhub install tuweiqinghua
+```
+
+没装 CLI 的话先装一下:
+
+```bash
+npm i -g clawdhub
+```
+
+### 方式二:从 GitHub 克隆
 
 ```bash
 git clone https://github.com/wanikua/tuweiqinghua.git
@@ -57,7 +74,7 @@ cp commands/土味情话.md ~/.claude/commands/
 - "来句土味情话"
 - "整点土的"
 - "跟我聊天"
-- "说个骚话"
+- "甜一点"
 - "帮我追对象"
 
 ## 示例
@@ -116,8 +133,10 @@ cp commands/土味情话.md ~/.claude/commands/
 
 MIT
 
-## 相关
+## 相关链接
 
+- [ClawHub — Claude Code skills 包管理器](https://clawhub.ai)
 - [Claude Code 官网](https://claude.com/claude-code)
 - [Claude Code skills 文档](https://docs.claude.com/en/docs/claude-code/skills)
 - [Claude Code slash commands 文档](https://docs.claude.com/en/docs/claude-code/slash-commands)
+- [awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) —— Claude skills 精选列表
